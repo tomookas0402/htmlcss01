@@ -1,0 +1,39 @@
+body {
+    margin: 0; /*四隅の余白を消す*/
+    font-size: 2rem; /*フォントサイズを2倍にする*/
+    display: flex; /*asideを左に、mainを右に表示*/
+    /*高さを最大に広げるには、F12でbodyタグに合わせてサイズ見る、element.styleで
+    min-height: 100vh;で確かめる、cssのbodyに貼り付ける*/
+    min-height: 100vh;
+    outline: auto;
+}
+main {
+    /* flex: 1;  *//*mainを横いっぱいに広げる*/
+    width: 700px; /*固定幅*/
+    margin: 0 auto; /*真ん中にする*/
+    outline: auto;
+}
+aside {
+    /*asideの横を伸ばす、F12でasideタグに合わせて、element.styleで
+    width: 25%; min-width: 250px;を試す*/
+    width: 25%;
+    min-width: 250px;
+    /*asideを伸ばすdisplay: flex;、縦方向にflex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+    outline: auto;
+}
+ul {
+    list-style: none; /*ポチを消す*/
+    padding: 0; /*左の余白を消す*/
+    margin: 0; /*上の余白を消す*/
+    outline: auto;
+}
+li {
+    outline: auto;
+}
+div {
+    height: 300px; /*side footerの高さをいっぱいに広げる*/
+    margin-top: auto; /*side footerを一番下に下げる*/
+    outline: auto;
+}

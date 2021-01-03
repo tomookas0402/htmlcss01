@@ -1,0 +1,50 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+        "header header header" 150px
+        "left   center right " 1fr
+        "footer footer footer" 200px
+        / 150px 1fr 200px
+    ;
+    gap: 10px
+}
+header {
+    grid-area: header;
+    background-color: lightblue;
+    outline: 1px solid black;
+}
+
+main {
+    grid-area: center;
+    background-color: lightblue;
+    outline: 1px solid black;
+}
+nav {
+    grid-area: left;
+    background-color: lightblue;
+    outline: 1px solid black;
+}
+aside {
+    grid-area: right;
+    background-color: lightblue;
+    outline: 1px solid black;
+}
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+    outline: 1px solid black;
+}
+@media screen and (max-width: 900px){
+    body {
+        grid-template:
+            "header" 150px
+            "center" 1fr
+            "left"
+            "right"
+            "footer" 300px
+            ;
+    }
+}
